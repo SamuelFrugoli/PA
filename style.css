@@ -1,14 +1,180 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
     margin: 0;
     padding: 0;
-box-sizing: border-box;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
 }
 
-body{
-    background: #2e1a47;
-    color: white;
+body {
     min-height: 100vh;
+
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    background: #bdfb04;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================
+   CARTÃO
+========================= */
+
+.card {
+    width: 500px;
+    padding: 45px;
+
+    background: #191919;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        10px 10px 0 #111;
+
+    border: 4px solid #111;
+}
+
+
+/* =========================
+   BADGE
+========================= */
+
+.badge {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    background: #bdfb04;
+    color: #111;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+
+    transform: rotate(-2deg);
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+h1 {
+    font-family: 'Bangers', cursive;
+
+    font-size: 80px;
+
+    color: #bdfb04;
+
+    text-transform: uppercase;
+
+    line-height: 0.9;
+
+    transform: rotate(-3deg);
+
+    /*
+       CONTORNO PRETO
+    */
+    -webkit-text-stroke: 5px #111;
+
+    /*
+       SOMBRAS
+    */
+    text-shadow:
+        6px 6px 0 #111,
+        -3px -3px 0 #111,
+        3px -3px 0 #111,
+        -3px 3px 0 #111;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   PARÁGRAFO
+========================= */
+
+p {
+    color: #dfded7;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background: white;
+
+    color: #191919;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    font-weight: 700;
+
+    border: 3px solid #111;
+
+    box-shadow:
+        5px 5px 0 #bdfb04;
+
+    transition: 0.2s;
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.btn:hover {
+    transform: translate(4px, 4px);
+
+    box-shadow:
+        1px 1px 0 #bdfb04;
+
+    background: #bdfb04;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 600px) {
+
+    .card {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
 }
