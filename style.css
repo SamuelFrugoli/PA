@@ -88,4 +88,6 @@ body::after{
 
 .info-card:hover{
     transform: rotateY(.5px);
+
+    border-color: #dc2626;
 }
