@@ -20,6 +20,7 @@ body{
 
     flex-direction: column;
     gap: 60px;
+    padding: 80px 20px;
 }
 
 body::before, body::after{
@@ -45,6 +46,7 @@ body::after{
 }
 
 .card{
+   position: relative;
     z-index: 1;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(10px);
@@ -57,11 +59,28 @@ body::after{
     text-align: center;
     box-shadow: 0 20px 40px rgba(255, 255, 255, 0.5);
     transition: transform 0.3s ease, border-color 0.3s ease;
+
+    flex-shrink: 0;
 }
+
 
 .card-hover{
     transform: translateY(.5px);
     border-color: rgba(255, 255, 255, 0.25);
+}
+
+.badge{
+    display: inline-block;
+    background: rgba(248, 113, 113, 0.3);
+    color: #f87171;
+    border: 1px solid rgba(248, 113, 113, 0.3);
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .conteudo{
