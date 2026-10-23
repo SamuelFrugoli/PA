@@ -110,3 +110,7 @@ body::after{
     .conteudo h2{
         font-size: 1.6rem;
     }
+
+    .info-card{
+        padding: 22px;
+    }
