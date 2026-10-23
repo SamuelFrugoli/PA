@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 box-sizing: border-box;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 body{
@@ -11,6 +11,15 @@ body{
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    position: relative;
+
+    flex-direction: column;
+    gap: 60px;
 }
 
 body::before, body::after{
@@ -105,7 +114,7 @@ body::after{
         .informacoes{
             grid-template-columns: 1fr;
         }
-    }
+    
 
     .conteudo h2{
         font-size: 1.6rem;
@@ -114,3 +123,4 @@ body::after{
     .info-card{
         padding: 22px;
     }
+}
